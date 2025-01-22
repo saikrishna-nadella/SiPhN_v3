@@ -1,0 +1,59 @@
+To run SiPhN v3.2, Python3 interpreter and other python3 modules are required. 
+The good news is, they are all free and available open to everyone.
+The procedure given below is based on Microsoft Windows OS. Similar procedure can be followed for Linux based PC.
+
+0. Read the full process once, before beginning
+1. Download the python3.8 installer for your system architecture (32 bit/64 bit) from https://www.python.org
+2. Run the installer (it is assumed that installation is not with Admin previlages)
+3. On the installer window, select 'Add to PATH' and proceed with installation.
+4. Once the installation is over, you can find 
+   python.exe at    C:\Users\<userName>\AppData\Local\Programs\Python\Python38\
+   and pip.exe at    C:\Users\<userName>\AppData\Local\Programs\Python\Python38\Scripts
+   on a Windows PC.
+   Open commandPrompt and type 'python' without quotes and hit Enter. If python interpreter starts, then your installation is successful.
+5. Now SiPhN dependencies need to be installed. If you have internet connected to PC, follow the step 6 for installation of dependencies. If your PC is offline, then follow the step 7.
+
+6. With PC online >>>
+   a. Open commandPrompt and type 'pip' without quotes and hit Enter. If 'pip help' is shown, then you are ready to go ahead.
+   b. run following commands one after the other
+      pip install numpy
+      pip install matplotlib
+      pip install pyqt5
+      pip install pandas
+      pip install pytz
+      pip install XlsxWriter
+   c. You are done! go to Step 8
+
+7. With PC offline >>>
+   a. Go to a differnt PC which has internet connection. Open web browser and visit https://pypi.org
+   b. on the Home page, in Search bar, search for following items and download the .whl files SUITABLE for your platform (x86/x64). For reference, the filenames that need to be selected for Windows 10 64 bit PC with python3.8 is given below.
+       	numpy          	--> numpy-1.18.1-cp38-cp38-win_amd64.whl
+		pyparsing	--> pyparsing-2.4.6-py2.py3-none-any.whl
+		certifi		--> certifi-2020.11.8-py2.py3-none-any.whl
+		six		--> six-1.14.0-py2.py3-none-any.whl
+		dateutil	--> python_dateutil-2.8.1-py2.py3-none-any.whl
+        	setuptools	--> setuptools-41.2.0-py3-none-any.whl
+		cycler		--> cycler-0.10.0-py2.py3-none-any.whl
+		kiwisolver	--> kiwisolver-1.1.0-cp38-cp38-win_amd64.whl
+		Pillow		--> Pillow-8.0.1-cp38-cp38-win_amd64.whl
+
+	matplotlib     	--> matplotlib-3.1.2-cp38-cp38-win_amd64.whl
+      		pyqt5-sip	--> PyQt5_sip-12.7.2-cp38-cp38-win_amd64.whl
+      	pyqt5	    	--> PyQt5-5.14.2-5.14.2-cp35.cp36.cp37.cp38-none-win_amd64.whl
+	pandas		--> pandas-1.1.2-cp38-cp38-win_amd64.whl
+	pytz		--> pytz-2020.1-py2.py3-none-any.whl
+	XlsxWriter	--> XlsxWriter-1.3.7-py2.py3-none-any.whl
+	
+  c. after downloading all the wheel files for above modules, keep all of them in C:\Users\<userName>\AppData\Local\Programs\Python\Python38\Scripts folder.
+  d. Open commandPrompt in that folder and install above .whl files one by one, in the same order as mentioned above, by running 
+	pip install <name of .whl file>
+  e. You are done! go to Step 8
+
+8. Extract the received SiPhNv3.2-03102022.zip to required location and enter to that extracted folder
+9. There are two ways of running SiPhN. The second one is recommended.
+    a. double click the SiPhN.py
+    b. Open commandPrompt/Windows Powershell in that folder and type 
+	python ./SiPhN.py
+
+10. Now you know. Whenever SiPhN needs to be run, just do Step 9.
+   

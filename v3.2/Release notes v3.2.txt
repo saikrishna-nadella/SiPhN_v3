@@ -1,0 +1,114 @@
+Release notes SiPhN v3.2 (date: 07 Apr 2021)
+
+All features & options are same as v3.1.
+Following bugs are fixed
+   >>> SiPhN/TA
+	1. File I/O bug corrected.
+
+Release notes SiPhN v3.1 (date: 31 Jan 2021)
+
+All features & options are same as v3.0.
+Following bugs are fixed
+   >>> SiPhN/LSA SHF
+	1. Unit of angle is corrected.
+
+
+Release notes SiPhN v3 Release 0 (date: 29 Nov 2020)
+	This is a major update. 
+	I am very happy to announce the release of SiPhN v3 Release 0 fully implemented in Python3. This is an accomplishment of my objective to make SiPhN completely open source. The version numbering is continued from previous SiPhN releases. All further updates will happen in Python based SiPhN only. The maintenance of SiPhN version 2 is discontinued. 
+	Not only the change of Programming language, but also bundled with so many new features from model point of view and from user friendliness.
+	
+Following are the non-exhaustive list of changes from v2.1.1 to v3.0 of SiPhN apart from change in Programming language.
+
+1. New features in current update
+   >>>  SiPhN/TA - Transient analysis module
+	   1. 1D-Mesh can be viewed after specifying geometry inputs.
+           2. Flow monitoring effect on simulation time is reduced using multithreading 
+	   3. Flow monitoring can be dynamically ON or OFF.
+           4. Progress of simulation is displayed by progress bar. 
+	   5. Now, gravitational acceleration can be given as input to help simulating  low gravity conditions
+           6. Simulation can be stopped in between using 'Stop' button.
+
+   >>>  SiPhN/LSA SHF
+ 	   1. Analysis for many orientations possible now. A generalized formulation considering 8 legs arbitrarily oriented loop is incorporated to allow analysis various regular and special orientations. A loop having up to 8 legs can be analysed. See user manual for details.
+           2. Code is improved to avoid crash of GUI due to common user mistakes
+           3. Geometry validation and visualization is incorporated as interlock for analysis to avoid unexpected mistakes in input
+	   4. Publication quality figures can be extracted with user customization options within GUI
+           5. It should be noted that LSA, being in dimensionless coordinates in SiPhN, no special treatment in formulation is required for different values of gravitational acceleration. Grm given as input by user shall have consideration for 'g'.
+           
+   >>>  SiPhN/LSA IHG
+	   1. Temporarily removed. Will be added in next release based on user request.
+
+   >>>  SiPhN/SSA SHF
+ 	   1. Analysis for many orientations possible now. A generalized formulation considering 8 legs arbitrarily oriented loop is incorporated to allow analysis various regular and special orientations. A loop having up to 8 legs can be analysed. See user manual for details.
+           2. Code is improved to avoid crash of GUI due to common user mistakes
+           3. Geometry validation and visualization is incorporated as interlock for analysis to avoid unexpected mistakes in input
+	   4. Now, gravitational acceleration can be given as input to help simulating  low gravity conditions
+           5. Clarity on HTC input is given in GUI itself. Earlier, the corresponding message used to appear in console only.
+
+   >>>  SiPhN/SSA IHG
+	   1. Temporarily Removed. Will be added in next release based on user request.
+
+   >>>  Welcome SiPhN
+	   1. The look is updated
+	   2. SiPhN has got an Icon displayed on all window title bars.
+           3. SiPhN main window persists even after selecting a module. This allows user to simultaneously instantiate multiple modules (but, not multiple instances of same module).
+
+2. Bug fixes
+   >>> SiPhN/SSA SHF
+	Temperature determination is updated to be based on user specified ambient temperature when dimensionless inputs are given by user.
+
+3. Known bugs
+	<None at the release time>
+
+
+Release notes SiPhN v2.1.1 (date: 21 Sep 2019)
+ >>> This is a minor release in which User manual is included.
+ >>> Other aspects are same as in v2.1
+
+Release notes SiPhN v2.1 (date: 12 Apr 2019)
+1. New features in current update
+   >>>  SiPhN/TA - Transient analysis module
+	   A. Data entered in the table also gets saved automatically as a CSV file in case folder
+	   B. The table can be loaded from preexisting CSV file 
+   >>>  SiPhN/LSA SHF
+ 	  < No updates >
+   >>>  SiPhN/LSA IHG
+	   < No updates >
+   >>>  SiPhN/SSA SHF
+	   < No updates >
+   >>>  SiPhN/SSA IHG
+	   < No updates >
+   >>>  Welcome SiPhN
+	   Minor format changes
+
+2. Bug fixes
+	<no bug fixes>
+3. Known bugs
+	A. some tooltips give wrong information in modules other than SiPhN/TA
+4. Possible changes in future updates
+   A. User Manual is to be included
+   B. Tool tips for all modules shall be updated
+   C. Full case saving and loading capability for all modules
+   D. Fully functional Windows(R) executable file with MCR
+   E. Open source implementation of entire package
+   F. Additional formulations (based on user requests)
+
+
+Release notes SiPhN v2.0 (date: 30 Jan 2018)
+1. New features in current update
+   >>>  SiPhN/TA - Transient analysis module
+	   A. Capability to simulate power rise, power step back, loss of heat sink etc. transients
+	   B. Capability to use User Defined friction factor and heat transfer coefficient correlations
+	   C. Labelling the case folders from GUI itself
+	   D. Tooltips (help content on hovering the item) are added for all items for understanding their meaning
+   >>>  SiPhN/LSA SHF
+ 	  < No updates >
+   >>>  SiPhN/LSA IHG
+	   < No updates >
+   >>>  SiPhN/SSA SHF
+	   < No updates >
+   >>>  SiPhN/SSA IHG
+	   < No updates >
+2. Bug fixes
+   A. Two bugs related to thermophysical properties are fixed
