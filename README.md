@@ -33,8 +33,7 @@ This is the latest version and has more features for the above 3 modules compare
 
 This package is shared here under GPL 3.0 license (see LICENSE). I hope this package helps you, if you are looking to do some research on natural circulation loops. If this package is used in your research work, please aknowledge it by following citation
 
-"Saikrishna Nadella, Development of computer code for stability analysis of molten salt natural circulation loop with and without internal heat generation, M. Tech Thesis, December 2017, Homi Bhabha National Institute, Mumbai." 
-
+"Saikrishna Nadella, Development of computer code for stability analysis of molten salt natural circulation loop with and without internal heat generation, M. Tech Thesis, December 2017, Homi Bhabha National Institute, Mumbai. (DOI: 10.13140/RG.2.2.18970.26562/1)" 
 
 ## Publications based on this code
 1. Saikrishna Nadella, Abhishek Kumar Srivastava, Naresh Kumar Maheshwari, A semi-analytical model for linear stability analysis of rectangular natural circulation loops, Chemical Engineering Science, Volume 192, 2018, Pages 892-905, ISSN 0009-2509, https://doi.org/10.1016/j.ces.2018.08.034.
